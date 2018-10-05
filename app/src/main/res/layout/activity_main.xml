@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your pin to join the meeting"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="@dimen/large_padding"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/join_bg"
+        android:textColorHint="@color/white"
+        android:hint="6 digits pin number"/>
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:text="JOIN"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.call.CallActivity"
+    android:animateLayoutChanges="true">
+
+
+
+    <com.pexip.android.wrapper.PexView
+        android:id="@+id/pexView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <WebView
+        android:id="@+id/selfView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/normal_margin"
+        android:layout_alignParentRight="true"
+        android:elevation="@dimen/normal_elevation"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/controls_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout android:id="@+id/controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/above_normal_margin"
+            android:background="@drawable/light_blue_bg"
+            >
+
+            <Button
+                android:id="@+id/speaker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/speaker_onn"/>
+
+            <Button
+                android:id="@+id/microPhone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:background="@drawable/voice_recorder_on"
+                />
+
+            <Button
+                android:id="@+id/videoCall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:background="@drawable/video_recorder_onn"
+                />
+
+            <Button
+                android:id="@+id/end"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/very_extra_large_margin"
+                android:background="@drawable/call_off"/>
+
+            <Button
+                android:id="@+id/people"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:background="@drawable/profile_off"/>
+
+
+        </LinearLayout>
+
+</HorizontalScrollView>
+
+</RelativeLayout>
+</layout>

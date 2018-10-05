@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voice Meet</string>
+    <string name="internet_connectivity">No internet connection</string>
+    <string name="some_thing_went_wrong">Something went wrong, Please try again</string>
+    <string name="speech_not_supported">Speech not supported</string>
+    <string name="speech_prompt">Say 6 digits pin to join the meeting</string>
+    <string name="permission_denied">Permission has been denied</string>
+</resources>
